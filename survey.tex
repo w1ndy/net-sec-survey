@@ -1,0 +1,78 @@
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\ifCLASSOPTIONcompsoc
+  \usepackage[nocompress]{cite}
+\else
+  \usepackage{cite}
+\fi
+
+\ifCLASSINFOpdf
+  \usepackage[pdftex]{graphicx}
+  \graphicspath{{./images/}}
+  \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  \usepackage[dvips]{graphicx}
+  \graphicspath{{./images/}}
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+\usepackage{amsmath}
+\interdisplaylinepenalty=2500
+
+\usepackage{url}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+\title{Authentication in the Internet of Things}
+
+\author{Di~Weng,~\IEEEmembership{11621046}
+        and~Qi~Song,~\IEEEmembership{21521081}% <-this % stops a space
+% \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell was with the Department
+% of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+% GA, 30332.\protect\\
+% % note need leading \protect in front of \\ to get a newline within \thanks as
+% % \\ is fragile and will error, could use \hfil\break instead.
+% E-mail: see http://www.michaelshell.org/contact.html
+% \IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops an unwanted space
+\thanks{Manuscript received June 28, 2017; revised June 28, 2017.}}
+
+\markboth{Computer Network, Summer 2017}%
+{Di~Weng \and Qi~Song: Authentication in the Internet of Things}
+
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+The abstract goes here.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+internet of things, authentication.
+\end{IEEEkeywords}}
+
+
+% make the title area
+\maketitle
+
+\IEEEdisplaynontitleabstractindextext
+
+\IEEEpeerreviewmaketitle
+
+\IEEEraisesectionheading{\section{Introduction}\label{sec:introduction}}
+
+\input{texfiles/introduction}
+
+\section{Conclusion}
+
+\input{texfiles/conclusion}
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{survey}
+
+\end{document}
+
+
